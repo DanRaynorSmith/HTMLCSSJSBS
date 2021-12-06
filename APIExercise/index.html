@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" 
+    integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>API</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>POST</h2>
+            <form id="personForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName">
+                <label for="job">Job:</label>
+                <input type="text" name="job" id="job">
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Search:</h2>
+            <form id="searchForm">
+                <label for="searchId">Enter ID:</label>
+                <input type="text" name="searchId" id="searchId">
+                <div id="searchResults">
+                </div>
+            </form>
+        </section>
+        <section>
+            <h2>Delete By ID</h2>
+            <form id="deleteForm">
+                <label for="personId">Id:</label>
+                <input type="text" name="personId" id="personId">
+                <button type="submit">Delete</button>
+            </form>
+        </section>
+        <section>
+            <h2>Get All People:</h2>
+            <div id="getOutput"> 
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
